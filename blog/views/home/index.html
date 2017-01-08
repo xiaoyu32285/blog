@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>牛的博客</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<script src="/js/jquery-1.11.3.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<style>
+		body {padding-top: 50px; background: #f2f2f2;}
+		.main {margin-top: 20px;}
+		.main-left {background: #fff; padding-top: 20px;}
+		.media-left img {width: 280px; height: 180px;}
+		.media {margin-top: 20px; border-bottom: 1px dotted #ddd; padding-bottom: 20px;}
+		.media-body {color: #666;}
+		.media-body ul {margin: 10px 0;}
+		.media-body h2 {font-size: 24px; font-family: "微软雅黑"}
+		.hot li {line-height: 26px;}
+		.footer {background: #222; color: #999; padding-top: 20px; margin-top: 20px; font-size: 12px;}
+
+		/*自己编写媒体查询*/
+		@media screen and (max-width: 768px) {
+			.media-left, .media-body {display: block!important; margin-top: 20px;}
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="" class="navbar-brand">牛的博客</a>
+				<button class="navbar-toggle" data-target="#menu" data-toggle="collapse">
+					<spna class="icon-bar"></spna>
+					<spna class="icon-bar"></spna>
+					<spna class="icon-bar"></spna>
+				</button>
+			</div>
+			<div id="menu" class="collapse navbar-collapse">
+				<ul class="navbar-nav nav">
+					<li class="active"><a href="">首页</a></li>
+					<li><a href="">HTML</a></li>
+					<li><a href="">CSS</a></li>
+					<li><a href="">JavaScript</a></li>
+					<li><a href="">Node.js</a></li>
+				</ul>
+				<form action="" class="navbar-form navbar-right">
+					<div class="input-group">
+						<input type="text" placeholder="输入关键字" class="form-control">
+						<span class="input-group-btn">
+							<button class="btn btn-primary">搜索</button>
+						</span>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</nav>
+	
+	<div>
+		<img src="/images/baner.jpg" alt="" class="img-responsive">
+	</div>
+	
+	<div class="container main">
+		<div class="row">
+			<div class="col-md-9 main-left">
+				<ul class="media-list">
+					<li class="media">
+						<a href="" class="media-left"><img src="/images/post1.jpg" alt=""></a>
+						<div class="media-body">
+							<h2 class="media-heading"><a href="">干货！CSS与HTML5响应式图片案例</a></h2>
+							<ul class="list-inline">
+								<li><span class="glyphicon glyphicon-user"></span>admin</li>
+								<li><span class="glyphicon glyphicon-time"></span>2014-09-12</li>
+								<li><span class="glyphicon glyphicon-eye-open"></span> 83浏览</li>
+								<li><span class="glyphicon glyphicon-comment"></span><a href="">评论一下</a></li>
+							</ul>
+							<p>随着 Retina屏幕 的逐渐普及，网页中对图片的适配要求也越来越高。如何让图片在放大了两倍的 Retina 屏幕显示依然清晰，曾经一度困扰着网页开发者，好在 CSS3 与 HTML5 已经着力在改变</p>
+						</div>
+					</li>
+
+					<li class="media">
+						<a href="" class="media-left"><img src="/images/post2.gif" alt=""></a>
+						<div class="media-body">
+							<h2 class="media-heading"><a href="">干货！CSS与HTML5响应式图片案例</a></h2>
+							<ul class="list-inline">
+								<li><span class="glyphicon glyphicon-user"></span>admin</li>
+								<li><span class="glyphicon glyphicon-time"></span>2014-09-12</li>
+								<li><span class="glyphicon glyphicon-eye-open"></span> 83浏览</li>
+								<li><span class="glyphicon glyphicon-comment"></span><a href="">评论一下</a></li>
+							</ul>
+							<p>随着 Retina屏幕 的逐渐普及，网页中对图片的适配要求也越来越高。如何让图片在放大了两倍的 Retina 屏幕显示依然清晰，曾经一度困扰着网页开发者，好在 CSS3 与 HTML5 已经着力在改变</p>
+						</div>
+					</li>
+
+					<li class="media">
+						<a href="" class="media-left"><img src="/images/post3.png" alt=""></a>
+						<div class="media-body">
+							<h2 class="media-heading"><a href="">干货！CSS与HTML5响应式图片案例</a></h2>
+							<ul class="list-inline">
+								<li><span class="glyphicon glyphicon-user"></span>admin</li>
+								<li><span class="glyphicon glyphicon-time"></span>2014-09-12</li>
+								<li><span class="glyphicon glyphicon-eye-open"></span> 83浏览</li>
+								<li><span class="glyphicon glyphicon-comment"></span><a href="">评论一下</a></li>
+							</ul>
+							<p>随着 Retina屏幕 的逐渐普及，网页中对图片的适配要求也越来越高。如何让图片在放大了两倍的 Retina 屏幕显示依然清晰，曾经一度困扰着网页开发者，好在 CSS3 与 HTML5 已经着力在改变</p>
+						</div>
+					</li>
+
+
+					<li class="media">
+						<a href="" class="media-left"><img src="/images/post4.png" alt=""></a>
+						<div class="media-body">
+							<h2 class="media-heading"><a href="">干货！CSS与HTML5响应式图片案例</a></h2>
+							<ul class="list-inline">
+								<li><span class="glyphicon glyphicon-user"></span>admin</li>
+								<li><span class="glyphicon glyphicon-time"></span>2014-09-12</li>
+								<li><span class="glyphicon glyphicon-eye-open"></span> 83浏览</li>
+								<li><span class="glyphicon glyphicon-comment"></span><a href="">评论一下</a></li>
+							</ul>
+							<p>随着 Retina屏幕 的逐渐普及，网页中对图片的适配要求也越来越高。如何让图片在放大了两倍的 Retina 屏幕显示依然清晰，曾经一度困扰着网页开发者，好在 CSS3 与 HTML5 已经着力在改变</p>
+						</div>
+					</li>
+
+				</ul>
+				
+				<div class="text-center">
+					<ul class="pagination">
+					<li><a href="">&laquo;</a></li>
+					<li><a href="">1</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li><a href="">&raquo;</a></li>
+				</ul>
+				</div>
+				
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-default hot">
+					<div class="panel-heading">
+						热门文章
+					</div>
+					<div class="panel-body">
+						<ul class="list-unstyled">
+							<li><span class="label label-danger">1</span> <a href="">如何为网站和应用创建设计...</a></li>
+							<li><span class="label label-danger">2</span> <a href="">假如5年后你是开发总监</a></li>
+							<li><span class="label label-danger">3</span> <a href="">20个精雕细琢的LOGO草图...</a></li>
+							<li><span class="label label-default">4</span> <a href="">每个程序员都必须遵守的编程...</a></li>
+							<li><span class="label label-default">5</span> <a href="">推荐：7个有用的HTML5学习...</a></li>
+							<li><span class="label label-default">6</span> <a href="">响应式Web设计</a></li>
+							<li><span class="label label-default">7</span> <a href="">Javascript判断Chrome浏览器</a></li>
+							<li><span class="label label-default">8</span> <a href=""> 20个精雕细琢的LOGO草图...</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>		
+	<div class="footer container-fluid text-center">
+
+		<p>版权所有，保留一切权利！ 转载内容版权归作者及来源网站所有，原创内容转载请注明来源。</p>
+<p>Copyright © 2013-2014 andy, All Rights Reserved.</p>
+	</div>
+
+</body>
+</html>

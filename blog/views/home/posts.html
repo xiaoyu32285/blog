@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>牛的博客</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<script src="/js/jquery-1.11.3.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<style>
+		body {padding-top: 50px; background: #f2f2f2;}
+		.main {margin-top: 20px;}
+		.main-left {background: #fff; padding: 20px;}
+		.media-left img {width: 280px; height: 180px;}
+		.media {margin-top: 20px; border-bottom: 1px dotted #ddd; padding-bottom: 20px;}
+		.media-body {color: #666;}
+		.media-body ul {margin: 10px 0;}
+		.media-body h2 {font-size: 24px; font-family: "微软雅黑"}
+		.hot li {line-height: 26px;}
+		.footer {background: #222; color: #999; padding-top: 20px; margin-top: 20px; font-size: 12px;}
+
+		/*自己编写媒体查询*/
+		@media screen and (max-width: 768px) {
+			.media-left, .media-body {display: block!important; margin-top: 20px;}
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="" class="navbar-brand">牛的博客</a>
+				<button class="navbar-toggle" data-target="#menu" data-toggle="collapse">
+					<spna class="icon-bar"></spna>
+					<spna class="icon-bar"></spna>
+					<spna class="icon-bar"></spna>
+				</button>
+			</div>
+			<div id="menu" class="collapse navbar-collapse">
+				<ul class="navbar-nav nav">
+					<li class="active"><a href="">首页</a></li>
+					<li><a href="">HTML</a></li>
+					<li><a href="">CSS</a></li>
+					<li><a href="">JavaScript</a></li>
+					<li><a href="">Node.js</a></li>
+				</ul>
+				<form action="" class="navbar-form navbar-right">
+					<div class="input-group">
+						<input type="text" placeholder="输入关键字" class="form-control">
+						<span class="input-group-btn">
+							<button class="btn btn-primary">搜索</button>
+						</span>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+	</nav>
+	
+	<div>
+		<img src="/images/baner.jpg" alt="" class="img-responsive">
+	</div>
+	
+	<div class="container main">
+		<div class="row">
+			<div class="col-md-9 main-left">
+				
+				<ol class="breadcrumb">
+					<li><a href="">首页</a></li>
+					<li><a href="">css</a></li>
+					<li><a href="">响应式Web设计</a></li>
+				</ol>
+
+				<div class="page-header">
+					<h1>响应式Web设计</h1>
+					<p>Killer 发表于(2014-06-13) 本文标签： 浏览量：101次   
+					<a href=""><span class="glyphicon glyphicon-thumbs-up"></span> 喜欢</a> 
+					<a href=""><span class="glyphicon glyphicon-heart">收藏</a>
+					</p>
+				</div>
+
+				<h2>在设计中经常遇到这几个问题：</h2>
+				<p>想要网站兼容手机、平板电脑、pc，就得为不同的设备定制不同的版本。</p>
+				<p>响应式Web设计(Responsive Web design)的理念是页面的设计与开发应当根据设备环境（屏幕尺寸、屏幕定向、系统平台等）以及用户行为（改变窗口大小等）进行相应的响应和调整。具体的实践方式由多方面组成，包括弹性网格和布局、图片、CSS media query的使用等。无论用户正在使用pc、平板电脑，或者手机，无论是全屏显示还是非全屏的情况，无论屏幕是横向还是竖向，页面都应该能够自动切换分辨率、图片尺寸及相关脚本功能等，以适应不同设备</p>
+				<p>很多人并不是在全屏的情况下浏览我们的页面，如果让页面随着浏览器宽度改变而相应的调整会不会比较好？</p>
+				<p>响应式web设计对交互设计和前端实现提出了更高的要求，需要考虑清楚不同分辨率下页面的布局变化、内容的缩放等。</p>
+				
+				<hr>
+				<h3>相关文章</h3>
+				<div class="row">
+					<div class="col-md-6">
+						<span class="glyphicon glyphicon-link"></span><a href=""> 响应式Web设计</a>
+					</div>
+					<div class="col-md-6">
+						<span class="glyphicon glyphicon-link"></span><a href=""> 响应式Web设计</a>
+					</div>
+					<div class="col-md-6">
+						<span class="glyphicon glyphicon-link"></span><a href=""> 响应式Web设计</a>
+					</div>
+					<div class="col-md-6">
+						<span class="glyphicon glyphicon-link"></span><a href=""> 响应式Web设计</a>
+					</div>
+					<div class="col-md-6">
+						<span class="glyphicon glyphicon-link"></span><a href=""> 响应式Web设计</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-default hot">
+					<div class="panel-heading">
+						热门文章
+					</div>
+					<div class="panel-body">
+						<ul class="list-unstyled">
+							<li><span class="label label-danger">1</span> <a href="">如何为网站和应用创建设计...</a></li>
+							<li><span class="label label-danger">2</span> <a href="">假如5年后你是开发总监</a></li>
+							<li><span class="label label-danger">3</span> <a href="">20个精雕细琢的LOGO草图...</a></li>
+							<li><span class="label label-default">4</span> <a href="">每个程序员都必须遵守的编程...</a></li>
+							<li><span class="label label-default">5</span> <a href="">推荐：7个有用的HTML5学习...</a></li>
+							<li><span class="label label-default">6</span> <a href="">响应式Web设计</a></li>
+							<li><span class="label label-default">7</span> <a href="">Javascript判断Chrome浏览器</a></li>
+							<li><span class="label label-default">8</span> <a href=""> 20个精雕细琢的LOGO草图...</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>		
+	<div class="footer container-fluid text-center">
+
+		<p>版权所有，保留一切权利！ 转载内容版权归作者及来源网站所有，原创内容转载请注明来源。</p>
+<p>Copyright © 2013-2014 andy, All Rights Reserved.</p>
+	</div>
+
+</body>
+</html>
